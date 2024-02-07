@@ -1,0 +1,402 @@
+.brand-logo {
+    height: 70px;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+
+.nav-item {
+    font-size: 20px;
+    padding-right: 80px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
+.nav-item .nav-link {
+    border: 2px solid rgb(65, 5, 5);
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.navbar {
+    position: fixed;
+    margin-bottom: 30px;
+}
+
+.carousel-caption {
+    color: black;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f1f4fd;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 95%;
+  } */
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover {
+    background: #404040;
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+    display: none;
+}
+
+.slider-wrapper .slide-button#next-slide {
+    right: -25px;
+}
+
+.slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 18px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 2px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        display: none !important;
+    }
+
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .slider-wrapper .image-list .image-item {
+        width: 280px;
+        height: 380px;
+    }
+
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+}
+.title{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 800;
+color: #fff;
+text-align: center;
+background-image: linear-gradient(to right, rgba(48, 58, 53, 0.6), rgba(89, 101, 95, 0.6)), url("https://cdn3.vectorstock.com/i/1000x1000/12/27/ssc-letter-logo-design-with-polygon-shape-vector-43381227.jpg");
+background-position: center;
+background-repeat: no-repeat;
+}
+.title .suru{
+    margin-top: 150px;
+}
+.shoes-collection {
+    font-weight: 900 !important;
+    margin-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.card-container {
+   margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 80px;
+    position: relative;
+}
+.card {
+    height: 90%;
+    width: 60%;
+    background-color: white;
+    border-radius: 40px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all ease 0.6s;
+}
+
+#card1 {
+    background-image: url(https://images.lifestyleasia.com/wp-content/uploads/sites/7/2022/10/13084511/lennart-uecker-49bzdf_egju-unsplash-hero-1600x900.jpeg);
+
+}
+
+#card2 {
+    background-image: url(https://5.imimg.com/data5/SELLER/Default/2021/8/CA/DN/QA/43034868/1-500x500.jpg);
+
+}
+
+#card3 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN-iJTyfB3j9iAsbMCdhu4QHQq4RLDjmy9Ym6s7ju9k7KNqHAeUMzG_eWblJv5Cw4qzZ8&usqp=CAU);
+}
+#card4 {
+    background-image: url(https://previews.123rf.com/images/nakedking/nakedking1804/nakedking180400785/100108560-women-s-shoes-collection.jpg)
+}
+
+#card5 {
+    background-image: url(https://i0.wp.com/shoegazing.com/wp-content/uploads/2020/08/DSC03318-1-scaled.jpg?resize=1140%2C700&ssl=1&is-pending-load=1);
+
+}
+
+#card6 {
+    background-image: url(https://sneakernews.com/wp-content/uploads/2022/04/fila-barneys-new-york-shoes-release-date-1.jpg);
+}
+
+.Overlay {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 25px;
+    padding-top: 160px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+
+.Overlay h1 {
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    white-space: nowrap;
+
+
+}
+
+
+
+.card:hover .Overlay {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: rotate3d(-1, 1, -1.5, 15deg)
+}
+
+#scroller {
+    margin-top: 40px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+
+scroller::-webkit-scrollbar {
+    display: none;
+}
+
+#scroller-in{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 110px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: transparent;
+    -webkit-text-stroke: 5px #2f0808;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.counter-wrapper{
+    
+    background:linear-gradient(to right, rgba(66, 77, 71, 0.6), rgba(58, 72, 65, 0.6)), url(https://cdn3.vectorstock.com/i/1000x1000/12/27/ssc-letter-logo-design-with-polygon-shape-vector-43381227.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    padding: 10rem 9%;
+    margin-top: 5rem;
+    position: relative;
+    height: 30px;
+}
+.counter-wrapper::before{
+    position: absolute;
+    content: '';
+    content: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.7);
+    z-index: 1;
+}
+.counter{
+   text-align: center;   
+   color: #ddd;
+   z-index: 2;
+   position: relative;
+}
+.counter::before{
+    position: absolute;
+    content: '';
+    bottom: -2rem;
+    left: 50%;
+    width: 20%;
+    height: .2rem;
+    background: #4DB7FE;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.counter .count{
+    font-size: 3rem;
+    margin-bottom: rem;    
+}
+.counter p{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width: 768px) {
+   .counter-wrapper{
+       grid-template-columns: repeat(2, 1fr);
+       grid-row-gap: 8rem;
+   }
+}
+@media (max-width: 450px) {
+    html{
+        font-size: 30%;
+    }
+    .counter-wrapper{
+        grid-template-columns: 1fr;
+    }
+}
+.counter-scroller{
+    padding-top: 70px;
+    margin-bottom: 50px;
+
+}
